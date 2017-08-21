@@ -1,10 +1,20 @@
-# AEK React Boilerplate
+# AEK Weather Demo
 
-Please replace this file with useful information about your module.
+This is the demo code for the AEK training videos
 
 ------------
 
-## How to use this boilerplate
+## How to use
+
+Go into this directory in your Terminal or Command line and type the following command.
+
+``` bash
+
+aek start
+
+```
+
+This will then ask you for your App Manager login details and which of your environments you would like to proxy.
 
 ### Modifying Source code
 

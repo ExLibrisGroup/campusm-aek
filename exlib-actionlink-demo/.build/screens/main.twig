@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+  {{ aek.set_aek_version("2.0") }}
+  {{ aek.set_header_text('') }}
+
+
+  {% if aek.action == "getAction" %}
+
+    {% set actionLink = aek.request("test_param")|default(null) %}
+    {{ aek.respond({ "actionLink":actionLink }) }}
+
+  {% endif %}
+
+
+<html lang="en" data-aek-package="[[__package_data__]]" data-public-assets="[[__public_assets__]]" data-env="prod" data-platform="{{ aek.get_platform() }}" >
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  </head>
+
+<body  >
+
+  
+  <script>
+
+    !function(e){function o(n){if(t[n])return t[n].exports;var s=t[n]={exports:{},id:n,loaded:!1};return e[n].call(s.exports,s,s.exports,o),s.loaded=!0,s.exports}var t={};return o.m=e,o.c=t,o.p="/public/js/",o(0)}([function(e,o,t){"use strict";!function(){window.loadCampusmAssetStore=function(e,o){o||(o="0.0.8");var t,n=function(){e&&e(window.CampusM.assetStore)};try{t=JSON.parse(window.localStorage.__campusmAssetStore)}catch(s){}if(t&&t.version>=o)new Function(t.code)(),n();else{var r=document.createElement("script");r.onload=n,r.onError=function(){t?(console.warn("AssetStore: Unable to fetch minimum version "+t.version+" instead"),new Function(t.code)(),n()):console.error("AssetStore: unable to initialise AssetStore")},r.src="https://portal.ombiel.co.uk/assets/aek/aek-asset-store/"+o+"/loader.js",document.head.appendChild(r)}}}()}]);
+    loadCampusmAssetStore(function(assetStore) {
+
+      var sheets = ["main"];
+      sheets = sheets.map(function(s) {return s.match(/^(https?:\/)?\//) && s || "[[__public_assets__]]/css/"+s+".css"});
+
+      var scripts = ["main"];
+      scripts = scripts.map(function(s) {return s.match(/^(https?:\/)?\//) && s || "[[__public_assets__]]/js/"+s+".js"});
+
+      assetStore.fetchAssets(scripts);
+      assetStore.loadCSS(sheets).then(function() {
+        assetStore.loadJS(scripts);
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>

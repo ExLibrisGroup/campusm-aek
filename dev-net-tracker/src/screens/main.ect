@@ -1,0 +1,27 @@
+<!--
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ECT Template
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Everything at the root of the screens directory `/src/screens/*.ect`
+will be treated as an ECT template. The output from the ECT process
+will provide either raw HTML (for disconnected screens), or the Twig
+code that is sent to the server (for connected screens). "Disconnected"
+screens are served locally. "Connected" screens can include twig
+server-side processing and are served via the campusM servers. To
+"connect" a screen set a `connected:true` property in the `@configure`
+section in the screen code.
+-->
+
+<<
+@configure
+  title: "New Admit Progress Tool"
+  scripts: [
+    "main"
+  ]
+  stylesheets: [
+    "main"
+  ]
+>>
+
+<< extend "templates/master.ect" >>

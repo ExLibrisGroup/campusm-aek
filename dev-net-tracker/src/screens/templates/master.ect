@@ -1,0 +1,44 @@
+<!--
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Master ECT Template
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+-->
+
+<!DOCTYPE html>
+
+<< if @connected: >>
+  {{ aek.set_aek_version("2.0") }}
+  {{ aek.set_header_text('<<- @title >>') }}
+<< end >>
+
+<< content 'init' >>
+
+<html lang="en" data-aek-package="[[__package_data__]]" data-public-assets="[[__public_assets__]]" data-env="<<= @env >>" data-platform="<<=if @connected then '{{ aek.get_platform() }}' else 'web2' >>" >
+  <head>
+    <meta charset="utf-8">
+    <title><<= @title >></title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    << content 'head' >>
+  </head>
+
+  <body <<- @get_body_attributes() >>>
+    << content 'body' >>
+
+    <script>
+      << include '../../node_modules/@ombiel/aek-asset-store/public/include.js' >>
+      loadCampusmAssetStore(function(assetStore) {
+        var sheets = <<- JSON.stringify(@get_stylesheets()) >>;
+        sheets = sheets.map(function(s) {return s.match(/^(https?:\/)?\//) && s || "[[__public_assets__]]/css/"+s+".css"});
+        var scripts = <<- JSON.stringify(@get_scripts()) >>;
+        scripts = scripts.map(function(s) {return s.match(/^(https?:\/)?\//) && s || "[[__public_assets__]]/js/"+s+".js"});
+        assetStore.fetchAssets(scripts);
+        assetStore.loadCSS(sheets).then(function() {
+          assetStore.loadJS(scripts);
+        });
+      });
+    </script>
+
+  </body>
+</html>

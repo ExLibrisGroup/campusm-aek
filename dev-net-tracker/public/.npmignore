@@ -1,0 +1,9 @@
+#
+#-------------------------------------------------------------------
+# .npmignore
+#-------------------------------------------------------------------
+#
+# The .npmignore file is mainly used to avoid packaging files in
+# your project that you don't need to be downloaded by a client
+# who wants to consume your package.
+#

@@ -5,7 +5,7 @@
 #
 # You can configure aspects of the local server in `/runserver.yaml`
 # - this allows you to override, customize, or add the menu options
-# and other homescreen properties.
+# and other home screen properties.
 #
 
 plugins:

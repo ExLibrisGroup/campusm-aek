@@ -28,7 +28,7 @@
     "access": {
       "write": {
         "users": [
-          "na::payton"
+          "na::user"
         ]
       }
     },

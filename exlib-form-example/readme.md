@@ -2,6 +2,10 @@
 
 This project shows an example of a project that can use a form and send this information to a email address that is predefined in the project.
 
+Please make sure before trying this you change the email address in /src/screens/main.ect on line 6
+
+Any other questions or feedback please let us know.
+
 ------------
 
 ## How to use this boilerplate

@@ -1,6 +1,10 @@
-# AEK React Boilerplate
+# Image Picker Example
 
-Please replace this file with useful information about your module.
+This project shows an example of a project that can use the Image Picker and send this information to a email address that is predefined in the project.
+
+Please make sure before trying this you change the email address in /src/js/main.jsx on line 120
+
+Any other questions or feedback please let us know.
 
 ------------
 

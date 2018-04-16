@@ -10,7 +10,7 @@ homepage:
   menu:
     replace:
       - code: myscreen
-        desc: "My Screen"
+        desc: "Form Example"
         devPath: "/aek/c/main"
         noLabel: false
         # backgroundColor: rgba(0,0,0,0.1)

@@ -1,0 +1,43 @@
+<<
+@configure
+  connected:true,
+  title:"Image Picker"
+  scripts:[
+    "main"
+  ]
+  stylesheets:[
+    "main"
+  ]
+>>
+
+<< extend "templates/master.ect" >>
+
+<< block 'init': >>
+
+  {% if aek.action == "feedback" %}
+
+    {# Create email to be sent out #}
+    {% set email = aek.create_email() %}
+
+    {# Setup fields #}
+    {{ email.to(aek.request("mailto"),"Student Feedback") }}
+    {{ email.from(aek.request("email")|default(aek.campusm_user_email)) }}
+    {{ email.subject("Student Feedback") }}
+    {{ email.body(
+      "Feedback: " ~ aek.request("feedback") ~ "\r\n" ~
+      "Place: " ~ aek.request("place") ~ "\r\n" ~
+      "Comments: " ~ aek.request("comments"))
+    }}
+    {{email.base64Attachment(aek.request("imageData"),"image.jpg",aek.request("format"))}}
+
+    {{ email.send() }}
+
+    {% if email.error_info %}
+        {{ aek.respond({"error":true,"info":email.error_info}) }}
+    {% else %}
+        {{ aek.respond({"success":true,"info":aek.request("success")}) }}
+    {% endif %}
+
+  {% endif %}
+
+<< end >>

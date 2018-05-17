@@ -1,0 +1,45 @@
+#
+#-------------------------------------------------------------------
+# ESLint
+#-------------------------------------------------------------------
+#
+# ESLint is a pluggable linting utility for JavaScript and JSX. A
+# linter is a tool that flags suspicious usage in software
+# written in any computer language.
+#
+
+plugins:
+  - react
+extends: eslint:recommended
+ecmaFeatures:
+  jsx: true
+
+# Sets parser to babel-eslint.
+parser: babel-eslint
+
+# Sets env to write for the browser in CommonJS.
+env:
+  browser: true,
+  node: true
+
+# Shows how to override rule options:
+rules:
+  quotes: 0
+  key-spacing: 0
+  comma-spacing: 0
+  no-trailing-spaces: 0
+  no-underscore-dangle: 0
+  react/jsx-no-undef: 2
+  react/jsx-no-duplicate-props: 2
+  strict: 0
+  no-loop-func: 2
+  eqeqeq: [2, "allow-null"]
+  no-unused-expressions: 2
+  no-use-before-define: 2
+  no-with: 2
+  consistent-return: 2
+  curly: 2
+  new-cap: 2
+  semi: 2
+  space-infix-ops: 2
+  space-return-throw-case: 2

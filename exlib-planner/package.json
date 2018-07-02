@@ -25,14 +25,7 @@
   "ombiel": {
     "boilerplate": "@ombiel/exlib-boilerplate-aek-react@0.2.12-react15-2",
     "access": {
-      "write": {
-        "users": [
-          "sbonds"
-        ]
-      }
-    },
-    "runserver": {
-      "hostname": "mycudev.ombiel.co.uk"
+      "read": true
     }
   }
 }

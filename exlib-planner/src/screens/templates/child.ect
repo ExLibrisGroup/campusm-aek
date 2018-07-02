@@ -1,0 +1,23 @@
+<<
+@configure
+  connected: true,
+  scripts:[
+    "main"
+  ]
+  stylesheets:[
+    "main"
+  ]
+>>
+
+<< extend "templates/master.ect" >>
+
+<< block 'init': >>
+
+  << for preset in @presets: >>
+    << include """presets/#{preset}.twig""" >>
+  << end >>
+
+  << include "includes/actions.twig" >>
+  << include "includes/config.twig" >>
+
+<< end >>

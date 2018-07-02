@@ -1,0 +1,5 @@
+{% if aek.action == "get-events" %}
+  {% set service = aek.create_service("") %}
+  {{ service.set_namespace("") }}
+  {{ aek.respond(service.response) }}
+{% endif %}

@@ -1,6 +1,6 @@
 var React = window.React = require("react");
 var reactRender = require("-aek/react/utils/react-render");
-var {VBox} = require("-components/layout");
+var {VBox, Panel} = require("-components/layout");
 var Container = require("-components/container");
 var {BannerHeader} = require("-components/header");
 var {BasicSegment} = require("-components/segment");
@@ -144,9 +144,11 @@ var Screen = React.createClass({
       <Container>
         <VBox>
           <BannerHeader theme="alt" icon="edit" key="header" data-flex={0}>Feedback</BannerHeader>
-          <BasicSegment loading={this.state.loading}>
-            {content}
-          </BasicSegment>
+          <Panel>
+            <BasicSegment loading={this.state.loading}>
+              {content}
+            </BasicSegment>
+          </Panel>
         </VBox>
       </Container>
     );

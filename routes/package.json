@@ -19,7 +19,8 @@
     "@ombiel/aek-css": "1.0.x",
     "@ombiel/aek-lib": "1.0.x",
     "react": "^16.6.1",
-    "react-dom": "^16.6.1"
+    "react-dom": "^16.6.1",
+    "webpack-bundle-analyzer": "^3.3.2"
   },
   "devDependencies": {
     "@ombiel/aek-devserver": "1.0.x",

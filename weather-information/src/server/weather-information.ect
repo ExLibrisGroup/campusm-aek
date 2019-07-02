@@ -1,0 +1,25 @@
+<<
+@configure
+  scripts:[
+    "weather-information"
+  ],
+  connected: true
+>>
+
+<< extend "templates/master.ect" >>
+
+<< block "init": >>
+
+  {% if aek.action == "getLocation" %}
+    {% set service = aek.create_service("https://www.metaweather.com/api/location/search/?lattlong=" ~ aek.request("location"))%}
+    {{ service.set_method("GET") }}
+    {{ aek.respond(service.json) }}
+  {% endif %}
+
+  {% if aek.action == "getWeather" %}
+    {% set service = aek.create_service("https://www.metaweather.com/api/location/" ~ aek.request("id") ~ "/") %}
+    {{ service.set_method("GET") }}
+    {{ aek.respond(service.json) }}
+  {% endif %}
+
+<< end >>

@@ -1,0 +1,59 @@
+{
+  "name": "@ombiel/weather-information",
+  "version": "1.0.0",
+  "repository": "-",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "aekdevserver start",
+    "build": "aekdevserver build",
+    "build:analyze": "cross-env CM_BUNDLE_ANALYZE=yes aekdevserver build",
+    "devserver": "aekdevserver",
+    "lint": "eslint src/client",
+    "lint:fix": "eslint src/client --fix",
+    "aek:prerelease": "aekdevserver prerelease",
+    "aek:postcreate": "aekdevserver gen:screen",
+    "gen:screen": "aekdevserver gen:screen"
+  },
+  "dependencies": {
+    "@ombiel/aek-asset-store": "^0.0.8",
+    "@ombiel/aek-css": "1.x.x",
+    "@ombiel/aek-lib": "1.x.x",
+    "react": "^16.8.6",
+    "react-dom": "^16.6.6"
+  },
+  "devDependencies": {
+    "@ombiel/aek-devserver": "1.x.x",
+    "@ombiel/aek-webpack": "1.x.x",
+    "@ombiel/babel-preset-aek": "2.x.x",
+    "@ombiel/eslint-config-aek": "2.x.x",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.6.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  },
+  "eslintConfig": {
+    "extends": "@ombiel/aek"
+  },
+  "ombiel": {
+    "boilerplate": "@ombiel/aek-boilerplate@1.0.17",
+    "access": {
+      "write": {
+        "users": [
+          "na::your-username"
+        ]
+      }
+    },
+    "settings": {
+      "aek-lib": {
+        "injectStyles": true,
+        "styles": {
+          "primaryColor": "#c9d7ea",
+          "secondaryColor": "#3b5998"
+        }
+      }
+    },
+    "runserver": {
+      "hostname": "your-hostname.campusm.exlibrisgroup.com"
+    }
+  }
+}

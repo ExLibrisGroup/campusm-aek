@@ -1,0 +1,7 @@
+homepage:
+  menu:
+    replace:
+      - desc: Screen
+        screenName: screen
+        modal:
+          fullscreen: true

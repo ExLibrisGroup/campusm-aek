@@ -19,14 +19,14 @@ Once these steps are done, you should see the project running on [locahost:5000]
 A corresponding blog to this project can be found in the Ex Libris Developer Network [here](https://developers.exlibrisgroup.com/blog/new-portal-view-and-aek-full-screen/).
 
 ## Turn Full Screen On/Off Within Project
-This setting can be easily disabled/enabled from within the [runserver.yaml ](https://github.com/ExLibrisGroup/campusm-aek/tree/master/full-screen-project) file.
+This setting can be easily disabled/enabled from within the [runserver.yaml ](https://github.com/ExLibrisGroup/campusm-aek/blob/master/full-screen-project/runserver.yaml) file.
 
 * To enable full screen mode add the following to your file:
 ```javascript
         modal:
           fullscreen: true
 ```
-Your [runserver.yaml ](https://github.com/ExLibrisGroup/campusm-aek/tree/master/full-screen-project) file should now look something like this:  
+Your [runserver.yaml ](https://github.com/ExLibrisGroup/campusm-aek/blob/master/full-screen-project/runserver.yaml) file should now look something like this:  
 
 ```javascript
 homepage:

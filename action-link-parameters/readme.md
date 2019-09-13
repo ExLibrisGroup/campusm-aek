@@ -14,7 +14,7 @@ aek start
 
 Once these steps are done, you should see the project running on [locahost:5000](localhost:5000).
 
-A corresponding blog to this project can be found in the Ex Libris Developer Network [here](https://github.com/ExLibrisGroup/campusm-aek/tree/master/action-link-parameters).
+A corresponding blog to this project can be found in the Ex Libris Developer Network [here](https://developers.exlibrisgroup.com/blog/passing-parameters-to-the-aek-from-app-builder/). 
 
 ## Passing Parameters Locally
 Edit the [runserver.yaml ](https://github.com/ExLibrisGroup/campusm-aek/tree/master/action-link-parameters/runserver.yaml) file to simulate passing in parameters from an “action link.” Make sure the devPath is correct or else you will get errors that your screen cannot be found.  

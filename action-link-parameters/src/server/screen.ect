@@ -1,11 +1,8 @@
 <<
 @configure
-  connected:true
+  connected: true
   scripts:[
-    "main"
-  ]
-  stylesheets:[
-    "main"
+    "screen"
   ]
 >>
 
@@ -14,10 +11,8 @@
 << block 'init': >>
 
   {% if aek.action == "getAction" %}
-
     {% set actionLink = aek.request("test_param")|default(null) %}
     {{ aek.respond({ "actionLink":actionLink }) }}
-
   {% endif %}
 
 << end >>

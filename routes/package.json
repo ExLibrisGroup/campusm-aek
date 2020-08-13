@@ -22,7 +22,7 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "webpack-bundle-analyzer": "^3.3.2",
-    "yarn": "^1.17.3"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "@ombiel/aek-devserver": "1.0.x",

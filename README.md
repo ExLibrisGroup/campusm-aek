@@ -1,6 +1,9 @@
 # campusm-aek
 campusM AEK Example Projects
 
+## Prerequisites
+You must be set up with the AEK to run these example projects. Instructions for this can be found [here](https://developers.exlibrisgroup.com/campusm/npm/gettingstarted/). 
+
 ## Installation
 1. Clone the campusm-aek repo
 2. Go into the folder/project you want to run (each folder is its own AEK project)
@@ -8,12 +11,11 @@ campusM AEK Example Projects
 ```bash
 aek install
 ```
-4. Start the AEK project  
+4. Enter your login details (you will be prompted for this) 
+5. Start the AEK project  
 ```bash
 aek start
 ```
-5. Enter your login details (you will be prompted for this) 
-6. Choose the environment you would like to run against (you will be prompted for this) 
 
 Once these steps are done, you should see the project running on [http://locahost:5000](http://locahost:5000). 
 

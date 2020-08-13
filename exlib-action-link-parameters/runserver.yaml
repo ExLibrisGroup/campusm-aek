@@ -1,0 +1,6 @@
+homepage:
+  menu:
+    replace:
+      - desc: Action Link Parameters
+        screenName: action-link-parameters
+        devPath: "/aek/c/action-link-parameters?test_param=firebrick"

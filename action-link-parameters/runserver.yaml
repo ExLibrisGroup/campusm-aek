@@ -1,6 +1,0 @@
-homepage:
-  menu:
-    replace:
-      - desc: Screen
-        screenName: screen
-        devPath: "/aek/c/screen?test_param=firebrick"

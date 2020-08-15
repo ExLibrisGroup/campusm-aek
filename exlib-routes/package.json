@@ -37,11 +37,7 @@
   "ombiel": {
     "boilerplate": "@ombiel/aek-boilerplate@1.1.0",
     "access": {
-      "write": {
-        "users": [
-          "na::payton"
-        ]
-      }
+      "read": true
     },
     "settings": {
       "aek-lib": {
@@ -53,7 +49,7 @@
       }
     },
     "runserver": {
-      "hostname": "demo-na.campusm.exlibrisgroup.com"
+      "hostname": "example.campusm.exlibrisgroup.com"
     }
   }
 }

@@ -20,7 +20,7 @@
     "@ombiel/aek-lib": "1.x.x",
     "react": "^16.8.6",
     "react-dom": "^16.6.6",
-    "yarn": "^1.17.3"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "@ombiel/aek-devserver": "1.x.x",

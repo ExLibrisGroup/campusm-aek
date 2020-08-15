@@ -19,7 +19,7 @@
     "@ombiel/aek-css": "1.x.x",
     "@ombiel/aek-lib": "1.x.x",
     "eslint": "^6.0.1",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "react": "^16.8.6",
     "react-dom": "^16.6.6",
     "yarn": "^1.17.3"

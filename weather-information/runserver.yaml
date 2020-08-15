@@ -1,6 +1,0 @@
-homepage:
-  menu:
-    replace:
-
-      - desc: Weather Information
-        screenName: weather-information

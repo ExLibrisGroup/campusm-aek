@@ -17,4 +17,4 @@ aek start
 
 Once these steps are done, you should see the project running on [http://locahost:5000](http://locahost:5000). 
 
-The corresponding blog to this project can be found [here](https://developers.exlibrisgroup.com/blog/feedback-form/) in the Ex Libris Developer Network. 
+The corresponding blog to this project can be found [here](https://developers.exlibrisgroup.com/blog/send-emails-populated-with-form-data/) in the Ex Libris Developer Network. 

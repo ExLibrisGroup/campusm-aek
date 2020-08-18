@@ -1,0 +1,5 @@
+homepage:
+  menu:
+    replace:
+      - desc: Send Email With Form Data
+        screenName: send-email-with-form-data

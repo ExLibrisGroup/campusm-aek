@@ -2,3 +2,4 @@ node_modules
 aek.sublime-workspace
 .DS_Store
 .DS_Store?
+.build

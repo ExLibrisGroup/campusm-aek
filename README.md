@@ -36,8 +36,15 @@ Corresponding blogs to these projects can be found in the Ex Libris Developer Ne
 ```bash
 aek deploy
 ```
+Note: The next time you need to deploy changes, you will need to run **aek deploy -n** to indicate there is a new version that needs to be deployed. The terminal will prompt you to bump the version. You must complete this to see your changes once you deploy. 
+
 4. Complete the prompts in the terminal. Once you've gone through the prompts, look for **info: Deploy Successful** in the terminal. 
-5. Verify in App Manager that the project was deployed. 
+5. Verify in App Manager that the project was deployed by going to AEK > AEK Screens > look and see if your project is now listed. 
+6. Link the AEK project to a tile by going to AEK > AEK Menu Options > click Add AEK menu option. Add a Description, set the appropriate Roles for the new AEK tile. Then click Add Toolbar Item. Fill in the Label and set the Screen to the project you just deployed. Click Save. 
+7. Go to the app and verify that you can see your new AEK tile.   
 
 ## Common Issues
-* If you are getting an error when running **aek deploy** or **aek deploy -n**, you may not have the correct AEK permissions. Someone from your team or from Ex Libris will need to verify your permissions within App Manager. 
+* If you are seeing a version error when trying to deploy, you need to bump your version in the package.json. 
+* If you are getting a Git error when trying to deploy, you need to commit your changes. 
+* If you are getting a forbidden error when trying to deploy, you may not have the correct AEK permissions. Someone from your team or from Ex Libris will need to verify your permissions within App Manager.
+* If you are seeing a successful deploy message, but your changes aren't showing in the app, you probably didn't bump the version number. Deploy again with an updated version number, then you should see your changes. 

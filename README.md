@@ -12,7 +12,12 @@ You must be set up with the AEK to run these example projects. Instructions for 
 aek install
 ```
 4. Enter your login details (you will be prompted for this) 
-5. Start the AEK project  
+5. Open the project in your preferred editor, e.g. Visual Studio Code
+6. Navigate to the package.json file and update the hostname to your app's hostname, e.g. campusm-university.campusm.exlibrisgroup.com. Here is an example of what this would look like in the package.json
+```bash
+"hostname": "campusm-university.campusm.exlibrisgroup.com"
+```
+7. Start the AEK project  
 ```bash
 aek start
 ```

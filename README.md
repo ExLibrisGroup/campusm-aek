@@ -22,6 +22,6 @@ aek install
 aek start
 ```
 
-Once these steps are done, you should see the project running on [http://locahost:5000](http://locahost:5000). 
+Once these steps are done, you should see the project running on [http://locahost:5000](http://localhost:5000/). 
 
 Corresponding blogs to these projects can be found in the Ex Libris Developer Network [here](https://developers.exlibrisgroup.com/blog/?search=campusm). 

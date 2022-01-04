@@ -41,7 +41,8 @@ Note: The next time you need to deploy changes, you will need to run **aek deplo
 4. Complete the prompts in the terminal. Once you've gone through the prompts, look for **info: Deploy Successful** in the terminal. 
 5. Verify in App Manager that the project was deployed by going to AEK > AEK Screens > look and see if your project is now listed. 
 6. Link the AEK project to a tile by going to AEK > AEK Menu Options > click Add AEK menu option. Add a Description, set the appropriate Roles for the new AEK tile. Then click Add Toolbar Item. Fill in the Label and set the Screen to the project you just deployed. Click Save. 
-7. Go to the app and verify that you can see your new AEK tile.   
+7. Publish your new AEK tile by going to AEK > AEK Publishing > check the Publish All box > click Publish. 
+8. Go to the app and verify that you can see your new AEK tile.   
 
 ## Common Issues
 * If you are seeing a version error when trying to deploy, you need to bump your version in the package.json. 

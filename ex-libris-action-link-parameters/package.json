@@ -1,5 +1,5 @@
 {
-  "name": "@ombiel/exlib-action-link-parameters",
+  "name": "@ombiel/ex-libris-action-link-parameters",
   "version": "1.0.0",
   "repository": "-",
   "license": "UNLICENSED",
@@ -22,7 +22,7 @@
     "react-dom": "^16.6.6"
   },
   "devDependencies": {
-    "@ombiel/aek-devserver": "1.x.x",
+    "@ombiel/aek-devserver": ">=1.2.0-node14.3 < 2",
     "@ombiel/aek-webpack": "1.x.x",
     "@ombiel/babel-preset-aek": "2.x.x",
     "@ombiel/eslint-config-aek": "2.x.x",
@@ -35,9 +35,13 @@
     "extends": "@ombiel/aek"
   },
   "ombiel": {
-    "boilerplate": "@ombiel/aek-boilerplate@1.1.0",
+    "boilerplate": "@ombiel/aek-boilerplate@1.2.0-node14.5",
     "access": {
-      "read": true
+      "write": {
+        "users": [
+          "payton"
+        ]
+      }
     },
     "settings": {
       "aek-lib": {
@@ -49,7 +53,7 @@
       }
     },
     "runserver": {
-      "hostname": "example.campusm.exlibrisgroup.com"
+      "hostname": "campusm-university.campusm.exlibrisgroup.com"
     }
   }
 }

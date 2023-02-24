@@ -1,4 +1,4 @@
 node_modules
 !yarn.lock
 !npm-shrinkwrap.json
-aek.sublime-workspace
+!.npmignore

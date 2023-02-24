@@ -1,0 +1,5 @@
+homepage:
+  menu:
+    replace:
+      - desc: Image Picker
+        screenName: image-picker

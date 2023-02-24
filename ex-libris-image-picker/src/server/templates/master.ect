@@ -21,20 +21,15 @@
 
   <script>
 
-    << include '../../node_modules/@ombiel/aek-asset-store/public/include.js' >>
+    << include @resolve('@ombiel/aek-asset-store/public/include.js') >>
 
     loadCampusmAssetStore(function(assetStore) {
 
-      var sheets = <<- JSON.stringify(@get_stylesheets()) >>;
-      sheets = sheets.map(function(s) {return s.match(/^(https?:\/)?\//) && s || "[[__public_assets__]]/css/"+s+".css"});
-
       var scripts = <<- JSON.stringify(@get_scripts()) >>;
-      scripts = scripts.map(function(s) {return s.match(/^(https?:\/)?\//) && s || "[[__public_assets__]]/js/"+s+".js"});
+      scripts = scripts.map(function(s) {return s.match(/^(https?:\/)?\//) && s || "[[__public_assets__]]/"+s+".js"});
 
       assetStore.fetchAssets(scripts);
-      assetStore.loadCSS(sheets).then(function() {
-        assetStore.loadJS(scripts);
-      });
+      assetStore.loadJS(scripts);
 
     });
 

@@ -1,5 +1,0 @@
-homepage:
-  menu:
-    replace:
-      - desc: Local Weather Forecast
-        screenName: local-weather-forecast

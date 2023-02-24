@@ -1,5 +1,0 @@
-homepage:
-  menu:
-    replace:
-      - desc: Routes Example
-        screenName: routes-example

@@ -1,0 +1,5 @@
+homepage:
+  menu:
+    replace:
+      - desc: Routes
+        screenName: routes

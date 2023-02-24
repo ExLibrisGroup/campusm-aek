@@ -1,0 +1,5 @@
+homepage:
+  menu:
+    replace:
+      - desc: Server Side API Request
+        screenName: server-side-api-request

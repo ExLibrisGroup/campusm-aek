@@ -1,0 +1,19 @@
+<<
+@configure
+  connected: true
+  scripts:[
+    "server-side-api-request"
+  ]
+>>
+
+<< extend "templates/master.ect" >>
+
+<< block "init": >>
+
+  {% if aek.action == "getUKBankHolidays" %}
+    {% set service = aek.create_service("https://www.gov.uk/bank-holidays.json") %}
+    {{ service.set_method("GET") }}
+    {{ aek.respond(service.json) }}
+  {% endif %}
+
+<< end >>

@@ -9,18 +9,9 @@
 << extend "templates/master.ect" >>
 
 << block "init": >>
-
-  {% if aek.action == "get-items" %}
-    {# Fetch some static json from a URL to simulate a service call #}
-    {% set service = aek.create_service("https://dl.dropboxusercontent.com/s/2vawg8y3l21nrpf/test.json?dl=0") %}
-    {{ service.set_method("GET") }}
-
-    {# Return the data to the client side in JSON format #}
-    {{ service.echo_json }}
-  {% endif %}
-
+ 
   {% if aek.action == "send-email" %}
-    {# Send an email with the form data to a recipient #}
+    {# Send an email with the form data to a recipient. #}
     {% set email = aek.create_email() %}
     {% set data = aek.request("data")|json_decode %}
     {{ email.from("fakeEmail@gmail.com") }}

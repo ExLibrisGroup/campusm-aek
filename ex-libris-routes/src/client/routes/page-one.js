@@ -19,7 +19,7 @@ export function PageOne({ ctx }) {
       </BannerHeader>
 
       <BasicSegment style={{ paddingLeft: "1.5em", paddingRight: "1.5em" }}>
-        <p> You are on page 1. </p>
+        <p> You are on page 1 currently. </p>
         <div style={{ textAlign: "center" }}>
           <Button onClick={() => ctx.router.goto("/secondPage")}>
             Go to Page 2

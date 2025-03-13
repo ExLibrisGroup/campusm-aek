@@ -2,7 +2,7 @@
 campusM AEK Example Projects
 
 ## Prerequisites
-You must be set up with the AEK to run these example projects. Instructions for this can be found [here](https://developers.exlibrisgroup.com/campusm/npm/gettingstarted/). 
+You must be set up with the AEK to run these example projects. Instructions for this can be found [here](https://developers.exlibrisgroup.com/campusm/npm/). 
 
 ## Running Projects Locally
 1. Clone the campusm-aek repo locally.
